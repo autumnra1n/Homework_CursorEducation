@@ -11,6 +11,6 @@ public class Primitives {
         char var = (char) (b * s);
 
         System.out.println((b + s) + "\n" + (s - l) + "\n" + (l * d) + "\n" + (d / f));
-        System.out.println(var);
+        System.out.println(var); // in console - 䉀
     }
 }
