@@ -2,6 +2,7 @@ package HW_1_Intro;
 
 public class Primitives {
     public static void main(String[] args) {
+
         byte b = 100;
         short s = 10_000;
         long l = 1_000_000_000L;
