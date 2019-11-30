@@ -15,5 +15,5 @@ public class MainArrayTest {
 //Output:
 //        Sort values by DESC: 11 7 3 2 1
 //        Sum of all the positive numbers: 73
-//        Arithmetic mean of this array: 133.2
+//        Arithmetic mean of this array: 111.17
 //        Result: 3 2 0 1 4 0 8 0
