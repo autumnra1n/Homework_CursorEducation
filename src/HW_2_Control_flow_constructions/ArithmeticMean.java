@@ -4,7 +4,7 @@ class ArithmeticMean {
     int[] array = {10, 224, 300, 128, 4};
 
     public void returnArithmeticalMean() {
-        int sum = 0;
+        float sum = 0;
 
         for (int i = 0; i < array.length; i++) {
             sum += array[i];
