@@ -6,8 +6,8 @@ class DuplicateValues {
     public void replaceDuplicatedValues() {
         System.out.print("Result: ");
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == 3) {
-                if (i != 0) {
+            if (array[i] == 3 || array[i] == 2) {
+                if (i != 0 && i != 1) {
                     array[i] = 0;
                 }
             }
