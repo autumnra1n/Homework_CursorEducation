@@ -7,13 +7,8 @@ public class MainArrayTest {
 
         new SumOfNumbers().sumOfPositiveNumbers();
 
-        new ArithmeticMean().returnArithmeticalMean();
+        new ArithmeticMean().arithmeticalMean();
 
         new DuplicateValues().replaceDuplicatedValues();
     }
 }
-//Output:
-//        Sort values by DESC: 11 7 3 2 1
-//        Sum of all the positive numbers: 73
-//        Arithmetic mean of this array: 111.17
-//        Result: 3 2 0 1 4 0 8 0
