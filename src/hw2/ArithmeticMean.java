@@ -1,4 +1,4 @@
-package com.sviatH.homework_2;
+package hw2;
 
 class ArithmeticMean {
     Integer[] array = {10, 224, 300, 128, 4, 1};

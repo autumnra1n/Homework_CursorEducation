@@ -1,4 +1,4 @@
-package com.sviatH.homework_2;
+package hw2;
 
 class DuplicateValues {
     static Integer[] array = {3, 2, 3, 1, 4, 2, 8, 3};

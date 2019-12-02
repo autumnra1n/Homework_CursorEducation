@@ -1,4 +1,4 @@
-package com.sviatH.homework_2;
+package hw2;
 
 class SumOfNumbers {
     int[] array = {21, 43, -12, 7, -91, -13, 2};

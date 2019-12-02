@@ -1,4 +1,4 @@
-package com.sviatH.homework_2;
+package hw2;
 
 import java.util.Arrays;
 import java.util.Collections;

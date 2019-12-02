@@ -1,4 +1,4 @@
-package com.sviatH.homework_2;
+package hw2;
 
 public class MainArrayTest {
     public static void main(String[] args) {
