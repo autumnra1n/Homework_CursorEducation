@@ -1,13 +1,13 @@
-package HW_2_Control_flow_constructions;
+package com.sviatH.homework_2;
 
 public class MainArrayTest {
     public static void main(String[] args) {
 
-        new SortValues().reverseSort();
+        new SortValues().sortsInReverse();
 
         new SumOfNumbers().sumOfPositiveNumbers();
 
-        new ArithmeticMean().arithmeticalMean();
+        new ArithmeticMean().determinesArithmeticalMean();
 
         new DuplicateValues().replaceDuplicatedValues();
     }

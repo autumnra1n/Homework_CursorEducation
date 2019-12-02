@@ -1,4 +1,4 @@
-package HW_2_Control_flow_constructions;
+package com.sviatH.homework_2;
 
 class SumOfNumbers {
     int[] array = {21, 43, -12, 7, -91, -13, 2};

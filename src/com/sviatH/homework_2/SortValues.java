@@ -1,4 +1,4 @@
-package HW_2_Control_flow_constructions;
+package com.sviatH.homework_2;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -6,7 +6,7 @@ import java.util.Collections;
 class SortValues {
     Integer[] array = {2, 3, 1, 7, 11};
 
-    public void reverseSort() {
+    public void sortsInReverse() {
         Arrays.sort(array, Collections.reverseOrder());
 
         System.out.print("Sort values by DESC: ");

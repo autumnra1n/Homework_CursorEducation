@@ -1,4 +1,4 @@
-package HW_1_Intro;
+package com.sviatH.homework_1;
 
 public class Primitives {
     public static void main(String[] args) {

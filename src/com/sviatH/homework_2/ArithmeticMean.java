@@ -1,9 +1,9 @@
-package HW_2_Control_flow_constructions;
+package com.sviatH.homework_2;
 
 class ArithmeticMean {
     Integer[] array = {10, 224, 300, 128, 4, 1};
 
-    public void arithmeticalMean() {
+    public void determinesArithmeticalMean() {
         double sum = 0;
 
         for (int i = 0; i < array.length; i++) {
