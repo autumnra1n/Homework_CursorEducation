@@ -6,7 +6,8 @@ public class NumberOfObjects {
     public NumberOfObjects() {
         count++;
     }
-    public void countsObjects(){
+
+    public void countsObjects() {
         System.out.println("It was created " + count + " object/s in this class.");
     }
 }
