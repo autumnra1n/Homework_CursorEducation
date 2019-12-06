@@ -11,7 +11,7 @@ public class Car {
 
     public void startEngine(boolean engineIsOn) {
         this.engineIsOn = engineIsOn;
-        if (engineIsOn == true) {
+        if (engineIsOn) {
             System.out.println("You started the engine!");
         } else {
             System.out.println("You turned off the engine!");
