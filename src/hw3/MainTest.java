@@ -10,6 +10,10 @@ public class MainTest {
 
         new NumberOfObjects().countsObjects();
 
-        new Car().justGo();
+        Car someCar = new Car();
+        someCar.startEngine();
+        someCar.go();
+        someCar.keepSpeed(100);
+        someCar.countsCarObjects();
     }
 }

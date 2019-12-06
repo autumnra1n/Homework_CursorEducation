@@ -1,7 +1,7 @@
 package hw3.allclasses;
 
 public class NumberOfObjects {
-    public static int count;
+     private static int count;
 
     public NumberOfObjects() {
         count++;

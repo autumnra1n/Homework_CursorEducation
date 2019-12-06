@@ -1,17 +1,15 @@
 package hw3.allclasses;
 
 public class Car {
-    int speed;
-    boolean engineIsOn;
-    static int count;
+    private boolean engineIsOn;
+    private static int count;
 
     public Car() {
         count++;
     }
 
-    public void startEngine(boolean engineIsOn) {
-        this.engineIsOn = engineIsOn;
-        if (engineIsOn) {
+    public void startEngine() {
+        if (this.engineIsOn) {
             System.out.println("You started the engine!");
         } else {
             System.out.println("You turned off the engine!");
@@ -23,18 +21,10 @@ public class Car {
     }
 
     public void keepSpeed(int speed) {
-        this.speed = speed;
         System.out.println("You drive at a speed " + speed + " km/h");
     }
 
     public void countsCarObjects() {
         System.out.println("There are: " + count + " Car objects.");
-    }
-
-    public void justGo(){
-        startEngine(true);
-        go();
-        keepSpeed(100);
-        countsCarObjects();
     }
 }
