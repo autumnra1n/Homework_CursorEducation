@@ -30,4 +30,11 @@ public class Car {
     public void countsCarObjects() {
         System.out.println("There are: " + count + " Car objects.");
     }
+
+    public void justGo(){
+        startEngine(true);
+        go();
+        keepSpeed(100);
+        countsCarObjects();
+    }
 }
