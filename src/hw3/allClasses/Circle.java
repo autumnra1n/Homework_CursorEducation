@@ -5,6 +5,7 @@ public class Circle {
 
     public void calculationCircleArea() {
         double s = (Math.PI * Math.pow(radius, 2));
+        s = Math.round(s * 100.0) / 100.0;
         System.out.println("Circle area is: " + s + " cm2");
     }
 
