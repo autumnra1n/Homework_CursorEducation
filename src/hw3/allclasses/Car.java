@@ -1,8 +1,8 @@
 package hw3.allclasses;
 
 public class Car {
-    private boolean engineIsOn;
     private static int count;
+    private boolean engineIsOn;
 
     public Car() {
         count++;
