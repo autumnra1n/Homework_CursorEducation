@@ -1,4 +1,4 @@
-package hw3;
+package hw3.allClasses;
 
 public class Car {
     int speed;

@@ -1,4 +1,4 @@
-package hw3;
+package hw3.allClasses;
 
 public class NumberOfObjects {
     public static int count;
