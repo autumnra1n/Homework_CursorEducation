@@ -1,4 +1,4 @@
-package hw3.allClasses;
+package hw3.allclasses;
 
 public class Circle {
     private double radius;

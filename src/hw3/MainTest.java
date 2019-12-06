@@ -1,8 +1,8 @@
 package hw3;
 
-import hw3.allClasses.Car;
-import hw3.allClasses.Circle;
-import hw3.allClasses.NumberOfObjects;
+import hw3.allclasses.Car;
+import hw3.allclasses.Circle;
+import hw3.allclasses.NumberOfObjects;
 
 public class MainTest {
     public static void main(String[] args) {
