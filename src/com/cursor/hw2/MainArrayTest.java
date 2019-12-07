@@ -1,4 +1,4 @@
-package hw2;
+package com.cursor.hw2;
 
 public class MainArrayTest {
     public static void main(String[] args) {

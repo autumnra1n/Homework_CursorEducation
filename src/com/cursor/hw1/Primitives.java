@@ -1,4 +1,4 @@
-package hw1;
+package com.cursor.hw1;
 
 public class Primitives {
     public static void main(String[] args) {

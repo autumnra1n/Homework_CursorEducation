@@ -1,4 +1,4 @@
-package hw3.allclasses;
+package com.cursor.hw3.allclasses;
 
 public class Car {
     private static int count;

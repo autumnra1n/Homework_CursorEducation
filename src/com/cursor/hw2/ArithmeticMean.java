@@ -1,4 +1,4 @@
-package hw2;
+package com.cursor.hw2;
 
 class ArithmeticMean {
     Integer[] array = {10, 224, 300, 128, 4, 1};

@@ -1,4 +1,4 @@
-package hw2;
+package com.cursor.hw2;
 
 class DuplicateValues {
     static Integer[] array = {3, 2, 3, 1, 4, 2, 8, 3};
