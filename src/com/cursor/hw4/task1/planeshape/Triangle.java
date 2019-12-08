@@ -9,7 +9,6 @@ import java.util.HashMap;
 public class Triangle extends PlaneShape implements PerimeterMeasurable, AreaMeasurable {
     private HashMap<String, Double> coordinates = new HashMap<>();
 
-    private Double perimeter;
     private Double area;
     private double c1;
     private double c2;
