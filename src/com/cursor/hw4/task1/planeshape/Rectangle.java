@@ -19,18 +19,18 @@ public class Rectangle extends PlaneShape implements PerimeterMeasurable, AreaMe
     }
 
     @Override
-    public double getArea() {
+    public double calculateArea() {
         return Math.round(width * height * 100.0) / 100.0;
     }
 
     @Override
-    public double getPerimeter() {
+    public double calculatePerimeter() {
         return Math.round(2 * (width + height) * 100.0) / 100.0;
     }
 
     @Override
     public String toString() {
-        return "Rectangle: area - " + getArea() + " cm2; " + "perimeter - " + getPerimeter() + " cm; " + "coordinates - "
-                + coordinates + "; width - " + width + "cm; " + "height - " + height + "cm;";
+        return "Rectangle: area - " + calculateArea() + " cm\u00B2; " + "perimeter - " + calculatePerimeter() + " cm; " + "coordinates - "
+                + coordinates + "; width - " + width + " cm; " + "height - " + height + " cm;";
     }
 }

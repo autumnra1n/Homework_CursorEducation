@@ -18,8 +18,8 @@ public class Main {
                 new Cuboid(3, 5, 10, 20, 30),
                 new Sphere(12, 21, 36.12)};
 
-        for (int i = 0; i < geometricShapes.length; i++) {
-            System.out.println(geometricShapes[i]);
+        for (Shape geometricShape : geometricShapes) {
+            System.out.println(geometricShape);
         }
     }
 }

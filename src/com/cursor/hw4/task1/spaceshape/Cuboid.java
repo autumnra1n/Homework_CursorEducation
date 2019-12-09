@@ -7,7 +7,7 @@ import com.cursor.hw4.task1.interfaces.VolumeMeasurable;
 import java.util.HashMap;
 
 public class Cuboid extends Shape implements AreaMeasurable, VolumeMeasurable {
-    HashMap<String, Double> coordinates = new HashMap<>();
+    private HashMap<String, Double> coordinates = new HashMap<>();
 
     private Double width;
     private Double height;
@@ -22,19 +22,19 @@ public class Cuboid extends Shape implements AreaMeasurable, VolumeMeasurable {
     }
 
     @Override
-    public double getArea() {
+    public double calculateArea() {
         return Math.round(2 * (width * height + height * depth + width * depth) * 100.0) / 100.0;
     }
 
     @Override
-    public double getVolume() {
+    public double calculateVolume() {
         return Math.round(width * height * height * 100.0) / 100.0;
     }
 
     @Override
     public String toString() {
-        return "Cuboid: area - " + getArea() + "cm2; " + "volume - " + getVolume() + "cm3; " + "coordinates - " +
-                coordinates + "; " + "width - " + width + "cm; " + "height - " + height + "cm; " + "depth - " + depth +
-                "cm;";
+        return "Cuboid: area - " + calculateArea() + " cm\u00B2; " + "volume - " + calculateVolume() + " cm\u00B3; " + "coordinates - " +
+                coordinates + "; " + "width - " + width + " cm; " + "height - " + height + " cm; " + "depth - " + depth +
+                " cm;";
     }
 }

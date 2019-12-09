@@ -9,12 +9,9 @@ import java.util.HashMap;
 import static java.lang.Math.sqrt;
 
 public class SquarePyramid extends Shape implements AreaMeasurable, VolumeMeasurable {
-    HashMap<String, Double> coordinates = new HashMap<>();
-    double x;
+    private HashMap<String, Double> coordinates = new HashMap<>();
     private Double width;
     private Double height;
-    double perimeter;
-    double area;
 
     public SquarePyramid(double x1, double x2, double width, double height) {
         this.coordinates.put("x1", x1);
@@ -24,18 +21,18 @@ public class SquarePyramid extends Shape implements AreaMeasurable, VolumeMeasur
     }
 
     @Override
-    public double getArea() {
+    public double calculateArea() {
         return Math.round(2 * width * (width / (2 + sqrt(Math.pow(height, 2) + Math.pow(width / 2, 2)))) * 100.0) / 100.0;
     }
 
     @Override
-    public double getVolume() {
+    public double calculateVolume() {
         return Math.round((Math.pow(width, 2) * height) / 3 * 100.0) / 100.0;
     }
 
     @Override
     public String toString() {
-        return "Square pyramid: area - " + getArea() + "cm2; " + "volume - " + getVolume() + "cm3; " +
-                "coordinates - " + coordinates + "; " + "width - " + width + "cm; " + "height - " + height + "cm;";
+        return "Square pyramid: area - " + calculateArea() + " cm\u00B2; " + "volume - " + calculateVolume() + " cm\u00B3; " +
+                "coordinates - " + coordinates + "; " + "width - " + width + " cm; " + "height - " + height + " cm;";
     }
 }

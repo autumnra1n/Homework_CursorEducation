@@ -7,7 +7,7 @@ import com.cursor.hw4.task1.interfaces.VolumeMeasurable;
 import java.util.HashMap;
 
 public class Sphere extends Shape implements AreaMeasurable, VolumeMeasurable {
-    HashMap<String, Double> coordinates = new HashMap<>();
+    private HashMap<String, Double> coordinates = new HashMap<>();
     private Double radius;
 
     public Sphere(double x1, double x2, double radius) {
@@ -17,18 +17,18 @@ public class Sphere extends Shape implements AreaMeasurable, VolumeMeasurable {
     }
 
     @Override
-    public double getArea() {
+    public double calculateArea() {
         return Math.round(4 * Math.PI * Math.pow(radius, 2) * 100.0) / 100.0;
     }
 
     @Override
-    public double getVolume() {
+    public double calculateVolume() {
         return Math.round(4 * Math.PI * Math.pow(radius, 3) / 3 * 100.0) / 100.0;
     }
 
     @Override
     public String toString() {
-        return "Sphere: area - " + getArea() + "cm2; " + "volume - " + getVolume() + "cm3; " + "coordinates - " +
-                coordinates + "; " + "radius - " + radius + ";";
+        return "Sphere: area - " + calculateArea() + " cm\u00B2; " + "volume - " + calculateVolume() + " cm\u00B3; " + "coordinates - " +
+                coordinates + "; " + "radius - " + radius + " cm;";
     }
 }

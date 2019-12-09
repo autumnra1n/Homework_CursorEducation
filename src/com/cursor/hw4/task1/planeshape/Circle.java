@@ -16,19 +16,19 @@ public class Circle extends PlaneShape implements PerimeterMeasurable, AreaMeasu
     }
 
     @Override
-    public double getArea() {
+    public double calculateArea() {
         return Math.round(2 * Math.PI * radius * 100.0) / 100.0;
     }
 
     @Override
-    public double getPerimeter() {
+    public double calculatePerimeter() {
 
         return Math.round(Math.PI * Math.pow(radius, 2) * 100.0) / 100.0;
     }
 
     @Override
     public String toString() {
-        return "Circle: area - " + getArea() + " cm2; " + "perimeter - " + getPerimeter() + " cm; " +
-                "coordinates - " + coordinates + "; radius - " + radius + "cm; ";
+        return "Circle: area - " + calculateArea() + " cm\u00B2; " + "perimeter - " + calculatePerimeter() + " cm; " +
+                "coordinates - " + coordinates + "; radius - " + radius + " cm; ";
     }
 }
