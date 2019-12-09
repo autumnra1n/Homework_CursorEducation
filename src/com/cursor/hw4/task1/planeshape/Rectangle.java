@@ -8,9 +8,6 @@ import java.util.HashMap;
 public class Rectangle extends PlaneShape implements PerimeterMeasurable, AreaMeasurable {
     private HashMap<String, Double> coordinates = new HashMap<>();
 
-    private Double width;
-    private Double height;
-
     public Rectangle(double x1, double x2, double width, double height) {
         this.coordinates.put("x1", x1);
         this.coordinates.put("x2", x2);

@@ -1,17 +1,12 @@
 package com.cursor.hw4.task1.spaceshape;
 
 import com.cursor.hw4.task1.interfaces.AreaMeasurable;
-import com.cursor.hw4.task1.interfaces.Shape;
 import com.cursor.hw4.task1.interfaces.VolumeMeasurable;
 
 import java.util.HashMap;
 
-public class Cuboid extends Shape implements AreaMeasurable, VolumeMeasurable {
+public class Cuboid extends SpaceShape implements AreaMeasurable, VolumeMeasurable {
     private HashMap<String, Double> coordinates = new HashMap<>();
-
-    private Double width;
-    private Double height;
-    private Double depth;
 
     public Cuboid(double x1, double x2, double width, double height, double depth) {
         this.coordinates.put("x1", x1);

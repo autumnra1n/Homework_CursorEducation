@@ -7,7 +7,6 @@ import java.util.HashMap;
 
 public class Circle extends PlaneShape implements PerimeterMeasurable, AreaMeasurable {
     private HashMap<String, Double> coordinates = new HashMap<>();
-    private Double radius;
 
     public Circle(double x1, double x2, double radius) {
         this.coordinates.put("x1", x1);

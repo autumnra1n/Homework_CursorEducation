@@ -1,17 +1,14 @@
 package com.cursor.hw4.task1.spaceshape;
 
 import com.cursor.hw4.task1.interfaces.AreaMeasurable;
-import com.cursor.hw4.task1.interfaces.Shape;
 import com.cursor.hw4.task1.interfaces.VolumeMeasurable;
 
 import java.util.HashMap;
 
 import static java.lang.Math.sqrt;
 
-public class SquarePyramid extends Shape implements AreaMeasurable, VolumeMeasurable {
+public class SquarePyramid extends SpaceShape implements AreaMeasurable, VolumeMeasurable {
     private HashMap<String, Double> coordinates = new HashMap<>();
-    private Double width;
-    private Double height;
 
     public SquarePyramid(double x1, double x2, double width, double height) {
         this.coordinates.put("x1", x1);

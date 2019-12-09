@@ -1,14 +1,12 @@
 package com.cursor.hw4.task1.spaceshape;
 
 import com.cursor.hw4.task1.interfaces.AreaMeasurable;
-import com.cursor.hw4.task1.interfaces.Shape;
 import com.cursor.hw4.task1.interfaces.VolumeMeasurable;
 
 import java.util.HashMap;
 
-public class Sphere extends Shape implements AreaMeasurable, VolumeMeasurable {
+public class Sphere extends SpaceShape implements AreaMeasurable, VolumeMeasurable {
     private HashMap<String, Double> coordinates = new HashMap<>();
-    private Double radius;
 
     public Sphere(double x1, double x2, double radius) {
         this.coordinates.put("x1", x1);
