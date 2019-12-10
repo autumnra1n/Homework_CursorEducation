@@ -17,20 +17,20 @@ public class Triangle extends PlaneShape implements PerimeterMeasurable, AreaMea
         this.coordinates.put("z1", z1);
         this.coordinates.put("z2", z2);
 
-        c1 = Point2D.distance(x1, y1, x2, y2);
+        side1 = Point2D.distance(x1, y1, x2, y2);
 
-        c2 = Point2D.distance(x1, y2, z1, z2);
+        side2 = Point2D.distance(x1, y2, z1, z2);
 
-        c3 = Point2D.distance(x1, y2, z1, z2);
+        side3 = Point2D.distance(x1, y2, z1, z2);
 
-        p = (c1 + c2 + c3) / 2;
-        area = Math.sqrt(p * (p - c1) * (p - c2) * (p - c3));
+        halfPerimeter = (side1 + side2 + side3) / 2;
+        area = Math.sqrt(halfPerimeter * (halfPerimeter - side1) * (halfPerimeter - side2) * (halfPerimeter - side3));
         area = Math.round(area * 100.0) / 100.0;
     }
 
     @Override
     public double calculatePerimeter() {
-        return Math.round((c1 + c2 + c3) * 100.0) / 100.0;
+        return Math.round((side1 + side2 + side3) * 100.0) / 100.0;
     }
 
     @Override
@@ -42,7 +42,7 @@ public class Triangle extends PlaneShape implements PerimeterMeasurable, AreaMea
     public String toString() {
 
         return "Triangle: area - " + calculateArea() + " cm\u00B2; " + "perimeter - " + calculatePerimeter() + " cm; " + "coordinates - " +
-                coordinates + "; " + "first side - " + Math.round(c1 * 100.0) / 100.0 + " cm; " + "second side - " +
-                Math.round(c2 * 100.0) / 100.0 + " cm; " + "third side - " + Math.round(c3 * 100.0) / 100.0 + " cm;";
+                coordinates + "; " + "first side - " + Math.round(side1 * 100.0) / 100.0 + " cm; " + "second side - " +
+                Math.round(side2 * 100.0) / 100.0 + " cm; " + "third side - " + Math.round(side3 * 100.0) / 100.0 + " cm;";
     }
 }
